@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="transport_journal_comp_rule" model="ir.rule">
+        <field name="name">Transport Journal multi-company</field>
+        <field name="model_id" ref="model_stock_transport_journal"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="stock_transport_comp_rule" model="ir.rule">
+        <field name="name">Stock Transport multi-company</field>
+        <field name="model_id" ref="model_stock_transport"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+</odoo>

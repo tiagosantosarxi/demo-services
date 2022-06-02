@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="iva0_m01" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Artigo 16.º n.º 6 do CIVA</field>
+        <field name="description">IVA0 - M01</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m01"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m02" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Artigo 6.º do Decreto-Lei n.º 198/90, de 19 de Junho</field>
+        <field name="description">IVA0 - M02</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m02"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m03" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Exigibilidade de caixa</field>
+        <field name="description">IVA0 - M03</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m03"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m04" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Isento Artigo 13.º do CIVA</field>
+        <field name="description">IVA0 - M04</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m04"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m05" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Isento Artigo 14.º do CIVA</field>
+        <field name="description">IVA0 - M05</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m05"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m06" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Isento Artigo 15.º do CIVA</field>
+        <field name="description">IVA0 - M06</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m06"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m07" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Isento Artigo 9.º do CIVA</field>
+        <field name="description">IVA0 - M07</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m07"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m08" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Autoliquidação</field>
+        <field name="description">IVA0 - M08</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m08"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m09" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - não confere direito a dedução</field>
+        <field name="description">IVA0 - M09</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m09"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m10" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Regime de isenção</field>
+        <field name="description">IVA0 - M10</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m10"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m11" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Regime particular do tabaco</field>
+        <field name="description">IVA0 - M11</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m11"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m12" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Regime da margem de lucro - Agências de Viagens</field>
+        <field name="description">IVA0 - M12</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m12"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m13" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Regime da margem de lucro - Bens em segunda mão</field>
+        <field name="description">IVA0 - M13</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m13"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m14" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Regime da margem de lucro - Objetos de arte</field>
+        <field name="description">IVA0 - M14</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m14"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m15" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Regime da margem de lucro - Objetos de coleção e antiguidades</field>
+        <field name="description">IVA0 - M15</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m15"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m16" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Isento Artigo 14.º do RITI</field>
+        <field name="description">IVA0 - M16</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m16"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+
+    <record id="iva0_m99" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_pt.pt_chart_template"/>
+        <field name="name">IVA0 - Não sujeito; não tributado</field>
+        <field name="description">IVA0 - M99</field>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+        <field name="exemption_id" ref="vendus_pt.m99"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+    </record>
+</odoo>

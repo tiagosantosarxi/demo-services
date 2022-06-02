@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pos_config_admin,access_pos_config_admin,model_pos_config,base.group_system,1,1,1,1
+access_pos_config,access_pos_config,model_pos_config,base.group_user,1,0,0,0
+
+access_pos_order_admin,access_pos_order_admin,model_pos_order,base.group_system,1,1,1,1
+access_pos_order,access_pos_order,model_pos_order,base.group_user,1,0,0,0
+
+access_pos_order_line_admin,access_pos_order_line_admin,model_pos_order_line,base.group_system,1,1,1,1
+access_pos_order_line,access_pos_order_line,model_pos_order_line,base.group_user,1,0,0,0
+
+access_pos_payment_admin,access_pos_payment_admin,model_pos_payment,base.group_system,1,1,1,1
+access_pos_payment,access_pos_payment,model_pos_payment,base.group_user,1,0,0,0
+
+

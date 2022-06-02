@@ -1,0 +1,1089 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vendus_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-16 09:39+0000\n"
+"PO-Revision-Date: 2021-04-16 09:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
+msgstr ""
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_model_view_form
+msgid "<span class=\"o_stat_text\">Records</span>"
+msgstr "<span class=\"o_stat_text\">Registos</span>"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_model_view_kanban
+msgid "<strong>Model Name:</strong>"
+msgstr "<strong>Nome do Modelo:</strong>"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_model_view_kanban
+msgid "<strong>No. of records:</strong>"
+msgstr "<strong>Nº de registos:</strong>"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.res_config_settings_view_form
+msgid "API Key"
+msgstr "Chave API"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "Reversão de Movimento Contabilístico"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__active
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__active
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__active
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__active
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__active
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.res_config_settings_view_form
+msgid ""
+"Add portuguese certified documents to your Odoo with the Vendus Integration."
+msgstr ""
+"Adicione certificação portuguesa aos seus documentos no Odoo através da "
+"Integração Vendus."
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__alice
+msgid "Alice"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__4
+msgid "April"
+msgstr "Abril"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_brand_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_category_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_payment_method_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_pricegroup_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_register_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_uom_view_form
+msgid "Archived"
+msgstr "Arquivado"
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m01
+msgid "Article 16 (6) of the CIVA"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m02
+msgid "Article 6 of the Decree-Law 189/90 June 19th"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__8
+msgid "August"
+msgstr "Agosto"
+
+#. module: vendus_account
+#: model:ir.actions.act_window,name:vendus_account.vendus_brand_action
+#: model:ir.ui.menu,name:vendus_account.menu_vendus_brand
+msgid "Brands"
+msgstr "Marcas"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__co
+msgid "Cartão Oferta"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__cc
+msgid "Cartão de Crédito"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__cd
+msgid "Cartão de Débito"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__de
+msgid "Cartão de Pontos"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m03
+msgid "Cash basis scheme"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.actions.act_window,name:vendus_account.vendus_category_action
+#: model:ir.ui.menu,name:vendus_account.menu_vendus_category
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__change
+msgid "Change"
+msgstr "Troco"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__ch
+msgid "Cheque Bancário"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_wizard__state__choose
+msgid "Choose"
+msgstr "Escolher"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_saft_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_wizard_view_form
+msgid "Close"
+msgstr "Fechar"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__code
+msgid "Code"
+msgstr "Código"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__company_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__company_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__company_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__company_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__company_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__company_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__cs
+msgid "Compensação de Saldos C/C"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configurações"
+
+#. module: vendus_account
+#: model:ir.ui.menu,name:vendus_account.menu_vendus_configuration
+msgid "Configuration"
+msgstr "Configuração"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__create_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__create_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: vendus_account
+#: model:ir.ui.menu,name:vendus_account.menu_vendus_models
+msgid "Dashboard"
+msgstr "Painel"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__12
+msgid "December"
+msgstr "Dezembro"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__decimal
+msgid "Decimal"
+msgstr "Decimal"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__default
+msgid "Default"
+msgstr "Predefinido"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_journal__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_account_move__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_reversal__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment_register__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_template__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_ir_actions_report__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_product_category__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_product_product__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_product_template__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_res_company__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_res_partner__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_uom_uom__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_document_mixin__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_mixin__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__display_name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_journal__vendus_document_type
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_model_view_kanban
+msgid "Dropdown menu"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax__exemption_id
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_template__exemption_id
+msgid "Exemption"
+msgstr "Isenção"
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m16
+msgid "Exemption Article 14 of the RITI"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m06
+msgid "Exemption Article 15 of the CIVA"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m07
+msgid "Exemption Article 9 of the CIVA"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m10
+msgid "Exemption scheme"
+msgstr ""
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_saft_wizard_view_form
+msgid "Export"
+msgstr "Exportar"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__2
+msgid "February"
+msgstr "Fevereiro"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__data
+msgid "File"
+msgstr "Ficheiro"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_wizard__state__get
+msgid "Get"
+msgstr "Obter"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_journal__id
+#: model:ir.model.fields,field_description:vendus_account.field_account_move__id
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_line__id
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_reversal__id
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__id
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment_register__id
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax__id
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__id
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_template__id
+#: model:ir.model.fields,field_description:vendus_account.field_ir_actions_report__id
+#: model:ir.model.fields,field_description:vendus_account.field_product_category__id
+#: model:ir.model.fields,field_description:vendus_account.field_product_product__id
+#: model:ir.model.fields,field_description:vendus_account.field_product_template__id
+#: model:ir.model.fields,field_description:vendus_account.field_res_company__id
+#: model:ir.model.fields,field_description:vendus_account.field_res_config_settings__id
+#: model:ir.model.fields,field_description:vendus_account.field_res_partner__id
+#: model:ir.model.fields,field_description:vendus_account.field_uom_uom__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_document_mixin__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_mixin__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__import_brands
+msgid "Import Brands"
+msgstr "Importar Marcas"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__import_categories
+msgid "Import Categories"
+msgstr "Importar Categorias"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__import_customers
+msgid "Import Customers"
+msgstr "Importar Clientes"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__import_payment_methods
+msgid "Import Payment Methods"
+msgstr "Importar Métodos de Pagamento"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__import_pricegroups
+msgid "Import Pricegroups"
+msgstr "Importar Grupos de Preços"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__import_products
+msgid "Import Products"
+msgstr "Importar Artigos"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__import_registers
+msgid "Import Registers"
+msgstr "Importar Caixas"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__import_uoms
+msgid "Import Uoms"
+msgstr "Importar Un. Medida"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__account_journal__vendus_document_type__ft
+msgid "Invoice"
+msgstr "Fatura"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__account_journal__vendus_document_type__fr
+msgid "Invoice-Receipt"
+msgstr "Fatura-Recibo"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__origin_move_ids
+msgid "Invoices"
+msgstr "Faturas"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__is_default
+msgid "Is Default"
+msgstr "É o predefinido"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_reversal__is_reason_required
+msgid "Is Reason Required"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_bank_statement_line__is_vendus_credit_note
+#: model:ir.model.fields,field_description:vendus_account.field_account_move__is_vendus_credit_note
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__is_vendus_credit_note
+msgid "Is Vendus Credit Note"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__1
+msgid "January"
+msgstr "Janeiro"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_journal
+msgid "Journal"
+msgstr "Diário"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento de Diário"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_move_line
+msgid "Journal Item"
+msgstr "Item do Diário"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__7
+msgid "July"
+msgstr "Julho"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__6
+msgid "June"
+msgstr "Junho"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_journal____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_account_move____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_reversal____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment_register____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_template____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_ir_actions_report____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_product_category____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_product_product____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_product_template____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_res_company____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_res_partner____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_uom_uom____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_document_mixin____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_mixin____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom____last_update
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__write_uid
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__write_date
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__lc
+msgid "Letra Comercial"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__mbway
+msgid "MB WAY"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__3
+msgid "March"
+msgstr "Março"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__5
+msgid "May"
+msgstr "Maio"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__method_type
+msgid "Method Type"
+msgstr "Tipo de Método"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__model_id
+msgid "Model"
+msgstr "Modelo"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__month
+msgid "Month"
+msgstr "Mês"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__n_records
+msgid "N Records"
+msgstr "Nº Registos"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_tax_exemption__name
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__needs_vendus_payment_method
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment_register__needs_vendus_payment_method
+msgid "Needs Vendus Payment Method"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m09
+msgid "Not allowed to deduct"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m99
+msgid "Not susceptible; not taxable"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__11
+msgid "November"
+msgstr "Novembro"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__nu
+msgid "Numerário"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__10
+msgid "October"
+msgstr "Outubro"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__ou
+msgid "Outro"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__dnp
+msgid ""
+"Pagamento em conta corrente - entre 15 e 90 dias ou numa data específica"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_payment
+msgid "Payments"
+msgstr "Pagamentos"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__pr
+msgid "Permuta de Bens"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.ui.menu,name:vendus_account.account_reports_pt_statements_menu
+msgid "Portugal"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_product_product
+msgid "Product"
+msgstr "Artigo"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_product_category
+msgid "Product Category"
+msgstr "Categoria de Artigo"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_product_template
+msgid "Product Template"
+msgstr "Modelo de Artigo"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "Unidade de Medida de Artigo"
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m14
+msgid "Profit margin scheme – Art objects"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m15
+msgid "Profit margin scheme – Collectibles and antiques"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m13
+msgid "Profit margin scheme – Second-hand goods"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m12
+msgid "Profit margin scheme – Travel agencies"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_bank_statement_line__reason
+#: model:ir.model.fields,field_description:vendus_account.field_account_move__reason
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__reason
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_document_mixin__reason
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: vendus_account
+#: model:ir.model.fields,help:vendus_account.field_account_bank_statement_line__reason
+#: model:ir.model.fields,help:vendus_account.field_account_move__reason
+#: model:ir.model.fields,help:vendus_account.field_account_payment__reason
+#: model:ir.model.fields,help:vendus_account.field_vendus_document_mixin__reason
+msgid "Reason for the status update"
+msgstr "Motivo para a atualização de estado"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__mb
+msgid "Referência MB"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_line__refund_line_ids
+msgid "Refund Lines"
+msgstr "Linhas de Retorno"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_move_line__refunded_line_id
+msgid "Refunded Line"
+msgstr "Linhas Retornadas"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_payment_register
+msgid "Register Payment"
+msgstr "Registar Pagamento"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_model__relative_endpoint
+msgid "Relative Endpoint"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_ir_actions_report
+msgid "Report Action"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__result
+msgid "Result"
+msgstr "Resultado"
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m08
+msgid "Reverse Charge"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.actions.act_window,name:vendus_account.vendus_saft_wizard_action
+#: model:ir.ui.menu,name:vendus_account.saft_wizard_menu
+msgid "SAFT-PT Export"
+msgstr "Exportar SAFT-PT"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__month__9
+msgid "September"
+msgstr "Setembro"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_bank_statement_line__show_reset_to_draft_button
+#: model:ir.model.fields,field_description:vendus_account.field_account_move__show_reset_to_draft_button
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__show_reset_to_draft_button
+msgid "Show Reset To Draft Button"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__account_journal__vendus_document_type__fs
+msgid "Simplified Invoice"
+msgstr "Fatura Simplificada"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__state
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__state
+msgid "State"
+msgstr "Estado"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__status
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__status
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__status
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__status
+msgid "Status"
+msgstr "Estado"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__store_id
+msgid "Store"
+msgstr "Loja"
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__subscription_active
+msgid "Subscription Active"
+msgstr "Subscrição Ativa"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_model_view_kanban
+msgid "Sync"
+msgstr "Sincronizar"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.vendus_wizard_view_form
+msgid "Sync Info"
+msgstr "Informação de Sincronização"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_tax
+msgid "Tax"
+msgstr "Imposto"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_tax_exemption
+msgid "Tax Exemption"
+msgstr "Isenção de Imposto"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_account_tax_template
+msgid "Templates for Taxes"
+msgstr "Modelos para Impostos"
+
+#. module: vendus_account
+#: model_terms:ir.ui.view,arch_db:vendus_account.res_config_settings_view_form
+msgid "Test Environment"
+msgstr "Ambiente de Testes"
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/models/account_move.py:0
+#: code:addons/vendus_account/models/account_move.py:0
+#, python-format
+msgid "There are not any available lines to refund."
+msgstr "Não existem linhas disponíveis para creditar."
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/models/account_move.py:0
+#: code:addons/vendus_account/models/account_move.py:0
+#, python-format
+msgid "There must be one tax on each invoice line."
+msgstr "Deve existir um imposto por linha."
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/models/ir_actions_report.py:0
+#: code:addons/vendus_account/models/ir_actions_report.py:0
+#, python-format
+msgid "This action has one or more draft records."
+msgstr "Esta ação tem um ou mais registos em rascunho."
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/models/ir_actions_report.py:0
+#: code:addons/vendus_account/models/ir_actions_report.py:0
+#, python-format
+msgid "This record is in a draft state."
+msgstr "Este registo está num estado de rascunho"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__tr
+msgid "Ticket Restaurante"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__title
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__title
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__title
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__title
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__title
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__title
+msgid "Title"
+msgstr "Título"
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m11
+msgid "Tobacco specific scheme"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__tb
+msgid "Transferência Bancária"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.actions.act_window,name:vendus_account.vendus_payment_method_action
+#: model:ir.actions.act_window,name:vendus_account.vendus_pricegroup_action
+#: model:ir.actions.act_window,name:vendus_account.vendus_uom_action
+#: model:ir.ui.menu,name:vendus_account.menu_vendus_uom
+msgid "Unit of Measures"
+msgstr "Unidades de Medida"
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m04
+msgid "VAT – Exemption Article 13 of the CIVA"
+msgstr ""
+
+#. module: vendus_account
+#: model:account.tax.exemption,name:vendus_account.m05
+msgid "VAT – Exemption Article 14 of the CIVA"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.ui.menu,name:vendus_account.menu_vendus
+#: model_terms:ir.ui.view,arch_db:vendus_account.view_account_journal_form
+msgid "Vendus"
+msgstr ""
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/models/vendus_mixin.py:0
+#: code:addons/vendus_account/models/vendus_mixin.py:0
+#, python-format
+msgid "Vendus API Key not found for this company."
+msgstr "Não foi encontrada uma Chave API Vendus para esta empresa."
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_res_company__vendus_active
+#: model:ir.model.fields,field_description:vendus_account.field_res_config_settings__vendus_active
+msgid "Vendus Active"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_res_company__vendus_api_key
+#: model:ir.model.fields,field_description:vendus_account.field_res_config_settings__vendus_api_key
+msgid "Vendus Api Key"
+msgstr "Chave API Vendus"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_brand
+msgid "Vendus Brand"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_category
+#: model:ir.model.fields,field_description:vendus_account.field_product_category__vendus_category_id
+msgid "Vendus Category"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_document_mixin
+msgid "Vendus Document Mixin"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_bank_statement_line__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_account_move__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_product_product__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_product_template__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_res_partner__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_res_users__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_brand__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_category__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_document_mixin__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_mixin__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_payment_method__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_pricegroup__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_register__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_uom__vendus_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_wizard__vendus_id
+msgid "Vendus ID"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_mixin
+msgid "Vendus Mixin"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_model
+msgid "Vendus Model"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.actions.act_window,name:vendus_account.vendus_model_action
+msgid "Vendus Models"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_bank_statement_line__vendus_attachment_id
+#: model:ir.model.fields,field_description:vendus_account.field_account_move__vendus_attachment_id
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__vendus_attachment_id
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_document_mixin__vendus_attachment_id
+msgid "Vendus PDF"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_payment_method
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__vendus_payment_method_id
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment_register__vendus_payment_method_id
+msgid "Vendus Payment Method"
+msgstr "Modo de Pagamento"
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_pricegroup
+msgid "Vendus Pricegroup"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_account_payment__vendus_receipt_name
+msgid "Vendus Receipt Name"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_register
+#: model:ir.model.fields,field_description:vendus_account.field_account_journal__vendus_register_id
+msgid "Vendus Register"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.actions.act_window,name:vendus_account.vendus_register_action
+msgid "Vendus Registers"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_saft_wizard
+msgid "Vendus SAF-T Wizard"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_res_company__vendus_test
+#: model:ir.model.fields,field_description:vendus_account.field_res_config_settings__vendus_test
+msgid "Vendus Test"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model,name:vendus_account.model_vendus_uom
+#: model:ir.model.fields,field_description:vendus_account.field_uom_uom__vendus_uom_id
+msgid "Vendus Uom"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.actions.act_window,name:vendus_account.vendus_wizard_action
+#: model:ir.model,name:vendus_account.model_vendus_wizard
+#: model:ir.ui.menu,name:vendus_account.menu_vendus_wizard
+msgid "Vendus Wizard"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields,field_description:vendus_account.field_vendus_saft_wizard__year
+msgid "Year"
+msgstr "Ano"
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/wizard/account_move_reversal.py:0
+#: code:addons/vendus_account/wizard/account_move_reversal.py:0
+#, python-format
+msgid "You can not create credit notes for moves in different journals."
+msgstr "Não é possível criar notas de crédito para diferentes diários."
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/models/account_payment.py:0
+#: code:addons/vendus_account/models/account_payment.py:0
+#, python-format
+msgid "You can not post a payment for invoices without a vendus document."
+msgstr ""
+"Não é possível emitir um recibo para faturas sem um documento do vendus."
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/models/account_payment.py:0
+#: code:addons/vendus_account/models/account_payment.py:0
+#, python-format
+msgid "You can not post a payment without an origin invoice."
+msgstr "Não é possível emitir um recibo sem uma ou mais faturas de origem"
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/wizard/account_move_reversal.py:0
+#: code:addons/vendus_account/wizard/account_move_reversal.py:0
+#, python-format
+msgid ""
+"You can only create rappel credit notes from invoices of the same company."
+msgstr ""
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/wizard/account_move_reversal.py:0
+#: code:addons/vendus_account/wizard/account_move_reversal.py:0
+#, python-format
+msgid ""
+"You can only create rappel credit notes from invoices with the same partner."
+msgstr ""
+
+#. module: vendus_account
+#: code:addons/vendus/vendus_account/wizard/vendus_saft_wizard.py:0
+#: code:addons/vendus_account/wizard/vendus_saft_wizard.py:0
+#, python-format
+msgid "You cannot generate a SAF-T PT document for a non-portuguese company"
+msgstr "Não é possível gerar um ficheiro SAF-T PT para empresas não portuguesas"
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_payment_method__method_type__zarph
+msgid "Zarph"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__state__choose
+msgid "choose"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__state__error
+msgid "error"
+msgstr ""
+
+#. module: vendus_account
+#: model:ir.model.fields.selection,name:vendus_account.selection__vendus_saft_wizard__state__get
+msgid "get"
+msgstr ""

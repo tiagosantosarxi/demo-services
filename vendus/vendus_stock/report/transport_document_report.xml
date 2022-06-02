@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_transport">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-set="lang" t-value="doc.partner_id.lang"/>
+                <t t-call="vendus_stock.report_transport_document" t-lang="lang"/>
+            </t>
+        </t>
+    </template>
+
+    <template id="report_transport_document">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <t t-set="doc" t-value="doc.with_context(lang=lang)"/>
+                <t name="partner_header">
+                    <t t-set="address">
+                        <t t-if="doc.partner_id.commercial_partner_id">
+                            <div t-field="doc.partner_id.commercial_partner_id"
+                                 t-options='{"widget": "contact", "fields": ["address", "name", "phone"], "no_marker": True}'/>
+                        </t>
+                        <div t-if="doc.partner_id.commercial_partner_id.vat" class="mt16">
+                            <t t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>:
+                            <span t-esc="doc.partner_id.commercial_partner_id.vat"/>
+                        </div>
+                    </t>
+                </t>
+                <div class="page">
+                    <h2>
+                        <span t-esc="doc.name"/>
+                    </h2>
+                    <p t-if="doc.at_doc_code_id">
+                        <strong>
+                            AT Code:
+                            <span t-field="doc.at_doc_code_id"/>
+                        </strong>
+                    </p>
+                    <br/>
+                    <div style="padding-bottom: 150px;">
+                        <div style="float: left; width: 50%;">
+                            <span>
+                                <h4>Loading Address</h4>
+                            </span>
+                            <t t-esc="doc.loading_address_street"/>
+                            <br/>
+                            <t t-esc="doc.loading_address_zip"/>
+                            <t t-esc="doc.loading_address_city"/>
+                            <br/>
+                            <t t-esc="doc.loading_address_country.name"/>
+                        </div>
+                        <div style="float: right; width: 50%;" t-if="not doc.is_global">
+                            <span>
+                                <h4>Delivery Address</h4>
+                            </span>
+                            <t t-esc="doc.delivery_address_street"/>
+                            <br/>
+                            <t t-esc="doc.delivery_address_zip"/>
+                            <t t-esc="doc.delivery_address_city"/>
+                            <br/>
+                            <t t-esc="doc.delivery_address_country.name"/>
+                        </div>
+                    </div>
+                    <div id="informations" class="row mt32 mb32">
+                        <div name="date" t-if="doc.date" class="col-auto mw-100 mb-2">
+                            <strong>Posting Date</strong>
+                            <p class="m-0" t-field="doc.date"/>
+                        </div>
+                        <div t-if="doc.start_date" class="col-auto mw-100 mb-2">
+                            <strong>Estimated Start Date</strong>
+                            <p class="m-0" t-field="doc.start_date"/>
+                        </div>
+                        <div name="date_done" t-if="doc.end_date" class="col-auto mw-100 mb-2">
+                            <strong>Estimated End Date</strong>
+                            <p class="m-0" t-field="doc.end_date" t-options="{'widget': 'date'}"/>
+                        </div>
+                        <div t-if="doc.vehicle_id" class="col-auto mw-100 mb-2">
+                            <strong>Vehicle License Plate</strong>
+                            <p class="m-0" t-field="doc.vehicle_id"/>
+                        </div>
+                    </div>
+
+                    <table class="table table-sm mt48">
+                        <t t-set="has_serial_number" t-value="doc.transport_line_ids.mapped('lot_ids')"
+                           groups="stock.group_lot_on_delivery_slip"/>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span>Product</span>
+                                </th>
+                                <t name="lot_serial" t-if="has_serial_number">
+                                    <th>
+                                        Lot/Serial Number
+                                    </th>
+                                </t>
+                                <th class="text-center">
+                                    <span>Quantity</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="doc.transport_line_ids" t-as="product_line">
+                                <td>
+                                    <span t-esc="product_line.product_id.default_code"/>
+                                    <span t-field="product_line.name"/>
+                                </td>
+                                <t t-if="has_serial_number" name="move_line_lot">
+                                    <td><span t-esc="', '.join(product_line.lot_ids.mapped('name'))"/></td>
+                                </t>
+                                <td class="text-center">
+                                    <span t-esc="product_line.product_uom_qty*1"/>
+                                    <span t-field="product_line.product_uom"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p t-field="doc.note"/>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_print_transport_document" model="ir.actions.report">
+        <field name="name">Transport Document</field>
+        <field name="model">stock.transport</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_file">vendus_stock.report_transport</field>
+        <field name="report_name">vendus_stock.report_transport</field>
+        <field name="print_report_name">'TRANSPORT - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="model_stock_transport"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

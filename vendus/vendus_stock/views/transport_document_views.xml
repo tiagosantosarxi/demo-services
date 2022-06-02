@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_transport_view_form" model="ir.ui.view">
+        <field name="name">stock.transport.view.form</field>
+        <field name="model">stock.transport</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Transport Document" class="o_sale_order">
+                <header>
+                    <field name="return_documents" invisible="1"/>
+                    <field name="company_id" invisible="1"/>
+                    <field name="foreign_partner" invisible="1"/>
+                    <!--<button name="get_returns_product_sum" type="object" string="GET RETURNS"/>-->
+                    <button name="action_cancel" states="validated" type="object" string="Cancel"
+                            confirm="If the document has an AT code, cancelling it will also cancel it on the AT's end. Proceed?"/>
+                    <button name="action_validate" type="object" string="Validate"
+                            attrs="{'invisible': [('state', 'in', ('cancel', 'validated', 'comm'))]}"
+                            class="oe_highlight"/>
+                    <button name="action_generate_returns_document" type="object" string="Generate Returns Document"
+                            attrs="{'invisible': ['|','|', '|', ('state', '!=', 'validated'), ('return_documents', '!=', []), ('movement_type', 'in', ('returns.document', 'own_assets.document')), ('at_doc_code_id', '=', False)]}"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,validated"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="view_related_return_documents" type="object" class="oe_stat_button" icon="fa-file"
+                                string="Return Documents" attrs="{'invisible': [('return_documents', '=', [])]}"/>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        <group>
+                            <field name="origin_document" attrs="{'invisible': [('origin_document', '=', False)]}"/>
+                        </group>
+                        <h3>
+                            <group>
+                                <field name="at_doc_code_id"
+                                       attrs="{'invisible': ['|', ('at_doc_code_id', '=', False), ('foreign_partner', '=', True)]}"/>
+                            </group>
+                        </h3>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="partner_id" string="Partner"
+                                   attrs="{'required': [('movement_type', '!=', 'own_assets.document'), ('is_global', '=', False)],
+                                   'invisible': ['|', ('movement_type', '=', 'own_assets.document'), ('is_global', '=', True)]}"/>
+                            <br/>
+                            <field name="is_global"/>
+                            <field name="journal_id" options="{'no_create_edit': True}" string="Journal"/>
+                            <field name="movement_type" groups="base.group_no_one" string="Movement Type"/>
+                            <br/>
+                        </group>
+                        <group>
+                            <field name="date" string="Posting Date" options="{'datepicker': {'warn_future': true}}"/>
+                            <br/>
+                            <field name="start_date" string="Movement Start Date" required="1"/>
+                            <field name="end_date" string="Movement End Date"/>
+                            <field name="vehicle_id" attrs="{'readonly': [('state', '=', ('draft', 'comm'))]}" string="Vehicle License Plate"/>
+                        </group>
+                    </group>
+                    <br/>
+                    <group>
+                        <group name="origin" string="Origin">
+                            <!--                            <label for="street" string="Address"/>-->
+                            <div class="o_address_format">
+                                <div class="oe_edit_only">
+                                    <b>Loading Address:</b>
+                                </div>
+                                <field name="loading_address_street" placeholder="Street..." class="o_address_street"/>
+                                <field name="loading_address_city" placeholder="City" class="o_address_city"/>
+                                <field name="loading_address_zip" placeholder="ZIP" class="o_address_zip"/>
+                                <field name="loading_address_country" placeholder="Country" class="o_address_country"/>
+                            </div>
+                        </group>
+                        <group name="destination" string="Destination" attrs="{'invisible': [('is_global', '=', True)]}">
+                            <div class="o_address_format">
+                                <div class="oe_edit_only">
+                                    <b>Unloading Address:</b>
+                                </div>
+                                <field name="delivery_address_street" placeholder="Street..." class="o_address_street"/>
+                                <field name="delivery_address_city" placeholder="City" class="o_address_city"/>
+                                <field name="delivery_address_zip" placeholder="ZIP" class="o_address_zip"/>
+                                <field name="delivery_address_country" placeholder="Country" class="o_address_country" force_save="1"/>
+                            </div>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Products">
+                            <field name="transport_line_ids"
+                                   attrs="{'readonly': [('state', '!=', 'draft')]}">
+                                <tree editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="has_tracking" invisible="1"/>
+                                    <field name="name"/>
+                                    <field name="lot_ids" widget="many2many_tags"
+                                        groups="stock.group_production_lot"
+                                        optional="hide"
+                                        options="{'no_create_edit':True}"
+                                        context="{'default_company_id': parent.company_id, 'default_product_id': product_id}"
+                                        domain="[('product_id','=',product_id)]"
+                                    />
+                                    <field name="product_uom_qty"/>
+                                    <field name="product_uom"/>
+                                </tree>
+                            </field>
+                            <field name="note" class="oe_inline" placeholder="Terms and conditions..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="transport_documents_view_tree" model="ir.ui.view">
+        <field name="name">stock.transport.view.tree</field>
+        <field name="model">stock.transport</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree decoration-bf="message_needaction==True" decoration-muted="state=='cancel'"
+                  decoration-info="state == 'draft'">
+                <field name="name" string="Name"/>
+                <field name="message_needaction" invisible="1"/>
+                <field name="at_doc_code_id" string="AT Code"/>
+                <field name="journal_id" invisible="1" string="Journal"/>
+                <field name="movement_type" string="Movement Type"/>
+                <field name="partner_id" string="Partner"/>
+                <field name="start_date" string="Start Date" widget="date"/>
+                <field name="vehicle_id" string="Vehicle License Plate"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="transport_documents_view_search" model="ir.ui.view">
+        <field name="name">stock.transport.view.search</field>
+        <field name="model">stock.transport</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="name" string="Name"
+                       filter_domain="['|',('name','ilike',self),('at_doc_code_id','=',self)]"/>
+                <field name="state"/>
+                <field name="date"/>
+                <field name="start_date"/>
+                <field name="partner_id" string="Partner"/>
+                <field name="movement_type"/>
+                <filter name="draft" string="Draft" domain="[('state', '=', 'draft')]"/>
+                <filter name="validated" string="Validated" domain="[('state', '=', 'validated')]"/>
+                <filter name="cancelled" string="Cancelled" domain="[('state', '=', 'cancelled')]"/>
+                <filter name="comm" string="Communication" domain="[('state', '=', 'comm')]"/>
+                <separator/>
+                <group expand="0" string="Group By">
+                    <filter name="state" string="State" domain="[]" context="{'group_by':'state'}"/>
+                    <filter name="posting_date" string="Posting Date" domain="[]"  context="{'group_by':'date'}"/>
+                    <filter name="start_date" string="Movement Start Date" domain="[]"  context="{'group_by':'start_date'}"/>
+                    <filter name="partner" string="Partner" domain="[]"  context="{'group_by':'partner_id'}"/>
+                    <filter name="movement_type" string="Movement Type" domain="[]"  context="{'group_by':'movement_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="stock_transport_action" model="ir.actions.act_window">
+        <field name="name">Transport Documents</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stock.transport</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="transport_documents_view_search"/>
+    </record>
+
+    <menuitem action="stock_transport_action" id="menu_action_transport_documents_tree"
+              parent="stock.menu_stock_warehouse_mgmt" sequence="200" name="Transport Documents"/>
+</odoo>

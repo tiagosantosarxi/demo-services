@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Form view-->
+    <record id="view_order_form" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.l10n_pt_sale</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <!--Remove proforma button-->
+            <xpath expr="//button[@groups='sale.group_proforma_sales'][1]" position="attributes">
+                <attribute name="attrs">{'invisible': 1}</attribute>
+            </xpath>
+            <xpath expr="//button[@groups='sale.group_proforma_sales'][2]" position="attributes">
+                <attribute name="attrs">{'invisible': 1}</attribute>
+            </xpath>
+            <xpath expr="//h1" position="before">
+                <span class="o_form_label"><field name="sale_type" readonly="1" nolabel="1"/></span>
+            </xpath>
+
+            <!--Add journal and sale document type-->
+            <xpath expr="//field[@name='require_payment']" position="after">
+                <field name="journal_id" required="1" options="{'no_create_edit': True}"/>
+                <field name="sale_type_id" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!--Add domain to the existing quotation action-->
+    <record id="sale.action_quotations_with_onboarding" model="ir.actions.act_window">
+        <field name="domain">[('sale_type_id.code', '!=', 'PF')]</field>
+    </record>
+
+    <!--Action to proforma invoices-->
+    <record id="action_proforma" model="ir.actions.act_window">
+        <field name="name">Proforma Invoices</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.order</field>
+        <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+        <field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+        <field name="context">{'search_default_my_quotation': 1, 'default_sale_type': 'PF'}</field>
+        <field name="domain">[('sale_type_id.code', '=', 'PF')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new proforma invoice!
+            </p>
+            <p>
+                Once the proforma invoice is confirmed by the customer,<br/>you will be able to create an invoice and
+                collect the payment.
+            </p>
+        </field>
+    </record>
+</odoo>

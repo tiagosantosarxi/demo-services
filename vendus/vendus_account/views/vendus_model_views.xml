@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="vendus_model_view_form" model="ir.ui.view">
+        <field name="name">vendus.model.view.form</field>
+        <field name="model">vendus.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button type="object" class="oe_stat_button" icon="fa-list" name="action_see_records">
+                            <div class="o_form_field o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="n_records"/>
+                                </span>
+                                <span class="o_stat_text">Records</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" class="oe_inline"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="model_id"/>
+                            <field name="n_records"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="vendus_model_view_tree" model="ir.ui.view">
+        <field name="name">vendus.model.view.tree</field>
+        <field name="model">vendus.model</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="model_id"/>
+                <field name="n_records"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="vendus_model_view_kanban" model="ir.ui.view">
+        <field name="name">vendus.model.view.kanban</field>
+        <field name="model">vendus.model</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="model_id"/>
+                <field name="n_records"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_card oe_kanban_global_click">
+                            <div class="o_dropdown_kanban dropdown" t-if="!selection_mode">
+
+                                <a role="button" class="dropdown-toggle o-no-caret btn" data-toggle="dropdown"
+                                   data-display="static" href="#" aria-label="Dropdown menu" title="Dropdown menu">
+                                    <span class="fa fa-ellipsis-v"/>
+                                </a>
+                                <div class="dropdown-menu" role="menu">
+                                    <a role="menuitem" type="object" name="sync" groups="base.group_no_one"
+                                       class="dropdown-item">Sync</a>
+                                </div>
+                            </div>
+                            <div class="oe_kanban_content">
+                                <div class="o_kanban_record_top">
+                                    <b class="o_kanban_record_title"><field name="name"/></b>
+                                </div>
+                                <div class="o_kanban_record_body">
+                                    <div t-if="record.model_id.value">
+                                        <strong>Model Name:</strong>
+                                        <field name="model_id"/>
+                                    </div>
+                                    <div t-if="record.n_records.value" class="o_force_ltr">
+                                        <strong>No. of records:</strong>
+                                        <field name="n_records"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="vendus_model_action" model="ir.actions.act_window">
+        <field name="name">Vendus Models</field>
+        <field name="res_model">vendus.model</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+</odoo>

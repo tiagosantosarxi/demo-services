@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem name="Vendus"
+              id="menu_vendus"
+              groups="base.group_system"
+              web_icon="vendus_account,static/description/icon.png"/>
+
+    <menuitem id="menu_vendus_models"
+              parent="vendus_account.menu_vendus"
+              name="Dashboard"
+              action="vendus_account.vendus_model_action"
+              sequence="1"/>
+
+    <menuitem id="menu_vendus_configuration"
+              parent="vendus_account.menu_vendus"
+              name="Configuration"
+              sequence="100"/>
+
+    <menuitem id="menu_vendus_wizard"
+              name="Vendus Wizard"
+              action="vendus_account.vendus_wizard_action"
+              parent="vendus_account.menu_vendus_configuration"
+              sequence="1000"/>
+
+    <menuitem id="menu_vendus_uom"
+              action="vendus_account.vendus_uom_action"
+              parent="vendus_account.menu_vendus_configuration"
+              sequence="2"/>
+
+    <menuitem id="menu_vendus_brand"
+              action="vendus_account.vendus_brand_action"
+              parent="vendus_account.menu_vendus_configuration"
+              sequence="3"/>
+
+    <menuitem id="menu_vendus_category"
+              action="vendus_account.vendus_category_action"
+              parent="vendus_account.menu_vendus_configuration"
+              sequence="4"/>
+
+    <!--Saft menu in accounting-->
+    <menuitem id="account_reports_pt_statements_menu"
+              name="Portugal"
+              parent="account.menu_finance_reports"
+              sequence="0"
+              groups="account.group_account_manager"/>
+
+    <menuitem id="saft_wizard_menu" parent="account_reports_pt_statements_menu"
+              action="vendus_saft_wizard_action"
+              sequence="1" groups="account.group_account_manager"/>
+</odoo>

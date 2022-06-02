@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleorder_document" inherit_id="sale.report_saleorder_document">
+        <!--Force sale document type name in documents-->
+        <xpath expr="//h2" position="replace">
+            <h2>
+                <t>
+                    <span t-field="doc.journal_id.sale_type_id.name"/>
+                </t>
+                <span t-field="doc.name"/>
+            </h2>
+        </xpath>
+    </template>
+</odoo>

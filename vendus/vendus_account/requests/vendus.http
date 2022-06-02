@@ -1,0 +1,31 @@
+GET https://www.vendus.pt/ws/v1.1/products/pricegroups?api_key={{key}}
+Accept: application/json
+###
+
+GET https://www.vendus.pt/ws/v1.1/taxes/exemptions?api_key={{key}}
+Accept: application/json
+###
+
+GET https://www.vendus.pt/ws/v1.1/products?api_key={{key}}
+Accept: application/json
+###
+
+GET https://www.vendus.pt/ws/v1.1/stores?api_key={{key}}
+Accept: application/json
+###
+
+GET https://www.vendus.pt/ws/v1.1/registers?api_key={{key}}
+Accept: application/json
+###
+
+GET https://www.vendus.pt/ws/v1.1/documents?api_key={{key}}
+Accept: application/json
+###
+
+GET https://www.vendus.pt/ws/v1.1/documents/64724294?api_key={{key}}&mode=tests
+Accept: application/json
+###
+
+GET https://www.vendus.pt/ws/v1.1/documents?api_key={{key}}&mode=tests
+Accept: application/json
+###

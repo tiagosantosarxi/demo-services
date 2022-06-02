@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherited.vendus_stock</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="before">
+                <field name="can_create_vendus_documents" invisible="1"/>
+                <button name="action_create_at_transport"
+                        type="object"
+                        string="Create Transport Document"
+                        attrs="{'invisible': [('can_create_vendus_documents', '=', False)]}"/>
+            </xpath>
+
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_see_stock_transports" type="object"
+                            class="oe_stat_button" icon="fa-truck"
+                        attrs="{'invisible': [('stock_transport_count', '=', 0)]}">
+                    <field name="stock_transport_count" widget="statinfo" string="Stock Transports"/>
+                </button>
+            </xpath>
+
+            <xpath expr="//field[@name='move_type']" position="after">
+                <field name="type" groups="base.group_no_one"/>
+                <field name="is_return" groups="base.group_no_one"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

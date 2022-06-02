@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="m00" model="account.tax.exemption">
+        <field name="name">Regime Transitório</field>
+        <field name="code">M00</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m02" model="account.tax.exemption">
+        <field name="name">Transmissão de bens e serviços não sujeita</field>
+        <field name="code">M02</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m04" model="account.tax.exemption">
+        <field name="name">IVA - Regime de não sujeição</field>
+        <field name="code">M04</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m10" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º a) do CIVA</field>
+        <field name="code">M10</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m11" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º b) do CIVA</field>
+        <field name="code">M11</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m12" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º c) do CIVA</field>
+        <field name="code">M12</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m13" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º d) do CIVA</field>
+        <field name="code">M13</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m14" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º e) do CIVA</field>
+        <field name="code">M14</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m15" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º f) do CIVA</field>
+        <field name="code">M15</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m16" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º g) do CIVA</field>
+        <field name="code">M16</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m17" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º h) do CIVA</field>
+        <field name="code">M17</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m18" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º i) do CIVA</field>
+        <field name="code">M18</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m19" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º J) do CIVA</field>
+        <field name="code">M19</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m20" model="account.tax.exemption">
+        <field name="name">Isento Artigo 12.º K) do CIVA</field>
+        <field name="code">M20</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m30" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º a) do CIVA</field>
+        <field name="code">M30</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m31" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º b) do CIVA</field>
+        <field name="code">M31</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m32" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º c) do CIVA</field>
+        <field name="code">M32</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m33" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º d) do CIVA</field>
+        <field name="code">M33</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m34" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º e) do CIVA</field>
+        <field name="code">M34</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m35" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º f) do CIVA</field>
+        <field name="code">M35</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m36" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º g) do CIVA</field>
+        <field name="code">M36</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m37" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º h) do CIVA</field>
+        <field name="code">M37</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+    <record id="m38" model="account.tax.exemption">
+        <field name="name">Isento Artigo 15.º i) do CIVA</field>
+        <field name="code">M38</field>
+        <field name="country_id" ref="base.ao"/>
+    </record>
+
+</odoo>

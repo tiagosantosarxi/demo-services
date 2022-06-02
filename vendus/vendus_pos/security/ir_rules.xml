@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pos_config_comp_rule" model="ir.rule">
+        <field name="name">PoS Config multi-company</field>
+        <field name="model_id" ref="model_pos_config"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="pos_order_comp_rule" model="ir.rule">
+        <field name="name">PoS Order multi-company</field>
+        <field name="model_id" ref="model_pos_order"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="pos_order_line_comp_rule" model="ir.rule">
+        <field name="name">PoS Order Line multi-company</field>
+        <field name="model_id" ref="model_pos_order_line"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="pos_payment_comp_rule" model="ir.rule">
+        <field name="name">PoS Payment multi-company</field>
+        <field name="model_id" ref="model_pos_payment"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+</odoo>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="m01" model="account.tax.exemption">
+        <field name="name">Article 16 (6) of the CIVA</field>
+        <field name="code">M01</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m02" model="account.tax.exemption">
+        <field name="name">Article 6 of the Decree-Law 189/90 June 19th</field>
+        <field name="code">M02</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m03" model="account.tax.exemption">
+        <field name="name">Cash basis scheme</field>
+        <field name="code">M03</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m04" model="account.tax.exemption">
+        <field name="name">VAT – Exemption Article 13 of the CIVA</field>
+        <field name="code">M04</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m05" model="account.tax.exemption">
+        <field name="name">VAT – Exemption Article 14 of the CIVA</field>
+        <field name="code">M05</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m06" model="account.tax.exemption">
+        <field name="name">Exemption Article 15 of the CIVA</field>
+        <field name="code">M06</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m07" model="account.tax.exemption">
+        <field name="name">Exemption Article 9 of the CIVA</field>
+        <field name="code">M07</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m08" model="account.tax.exemption">
+        <field name="name">Reverse Charge</field>
+        <field name="code">M08</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m09" model="account.tax.exemption">
+        <field name="name">Not allowed to deduct</field>
+        <field name="code">M09</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m10" model="account.tax.exemption">
+        <field name="name">Exemption scheme</field>
+        <field name="code">M10</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m11" model="account.tax.exemption">
+        <field name="name">Tobacco specific scheme</field>
+        <field name="code">M11</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m12" model="account.tax.exemption">
+        <field name="name">Profit margin scheme – Travel agencies</field>
+        <field name="code">M12</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m13" model="account.tax.exemption">
+        <field name="name">Profit margin scheme – Second-hand goods</field>
+        <field name="code">M13</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m14" model="account.tax.exemption">
+        <field name="name">Profit margin scheme – Art objects</field>
+        <field name="code">M14</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m15" model="account.tax.exemption">
+        <field name="name">Profit margin scheme – Collectibles and antiques</field>
+        <field name="code">M15</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m16" model="account.tax.exemption">
+        <field name="name">Exemption Article 14 of the RITI</field>
+        <field name="code">M16</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+    <record id="m99" model="account.tax.exemption">
+        <field name="name">Not susceptible; not taxable</field>
+        <field name="code">M99</field>
+        <field name="country_id" ref="base.pt"/>
+    </record>
+
+</odoo>

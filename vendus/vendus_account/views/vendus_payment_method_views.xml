@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="vendus_payment_method_view_form" model="ir.ui.view">
+        <field name="name">vendus.payment_method.view.form</field>
+        <field name="model">vendus.payment.method</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="active" invisible="1"/>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                            attrs="{'invisible': [('active', '=', True)]}"/>
+
+                    <div class="oe_title">
+                        <label for="title" class="oe_edit_only"/>
+                        <h1>
+                            <field name="title" class="oe_inline"/>
+                        </h1>
+                        <h3>
+                            <group>
+                                <field name="vendus_id" readonly="1"/>
+                            </group>
+                        </h3>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="method_type"/>
+                            <field name="change"/>
+                            <field name="status"/>
+                            <field name="company_id"/>
+                            <!--<field name="default_payment_journal_id" required="1"-->
+                            <!--       domain="[('type', 'in', ['bank', 'cash'])]"/>-->
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="vendus_payment_method_view_tree" model="ir.ui.view">
+        <field name="name">vendus.payment_method.view.tree</field>
+        <field name="model">vendus.payment.method</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="title"/>
+                <field name="vendus_id"/>
+                <field name="method_type"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="vendus_payment_method_action" model="ir.actions.act_window">
+        <field name="name">Unit of Measures</field>
+        <field name="res_model">vendus.payment.method</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

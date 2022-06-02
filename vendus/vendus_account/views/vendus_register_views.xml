@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="vendus_register_view_form" model="ir.ui.view">
+        <field name="name">vendus.register.view.form</field>
+        <field name="model">vendus.register</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="active" invisible="1"/>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                            attrs="{'invisible': [('active', '=', True)]}"/>
+
+                    <div class="oe_title">
+                        <label for="title" class="oe_edit_only"/>
+                        <h1>
+                            <field name="title" class="oe_inline"/>
+                        </h1>
+                        <h3>
+                            <group>
+                                <field name="vendus_id" readonly="1"/>
+                            </group>
+                        </h3>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="subscription_active"/>
+                            <field name="status"/>
+                        </group>
+                        <group>
+                            <field name="company_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="vendus_register_view_tree" model="ir.ui.view">
+        <field name="name">vendus.register.view.tree</field>
+        <field name="model">vendus.register</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="title"/>
+                <field name="vendus_id"/>
+                <field name="subscription_active"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="vendus_register_action" model="ir.actions.act_window">
+        <field name="name">Vendus Registers</field>
+        <field name="res_model">vendus.register</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

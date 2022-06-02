@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.vendus_account</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='invoicing_settings']" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box" id="vendus_settings">
+                    <div class="o_setting_left_pane">
+                        <field name="vendus_active"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="vendus_active"/>
+                        <span class="fa fa-lg fa-building-o" title="Values set here are company-specific."/>
+                        <div class="text-muted">
+                            Add portuguese certified documents to your Odoo with the Vendus Integration.
+                        </div>
+                        <div class="content-group" attrs="{'invisible': [('vendus_active', '=', False)]}">
+                            <div class="row mt16">
+                                <label class="col-lg-3 o_light_label" string="API Key" for="vendus_api_key"/>
+                                <field name="vendus_api_key"/>
+                                <label class="col-lg-3 o_light_label" string="Test Environment" for="vendus_test"/>
+                                <field name="vendus_test"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

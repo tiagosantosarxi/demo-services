@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_move_form" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.vendus_account</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='narration']" position="before">
+                <field name="vat_note" readonly="1"/>
+            </xpath>
+            <xpath expr="//field[@name='country_code']" position="after">
+                <field name="is_vendus_credit_note" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='invoice_user_id']" position="before">
+                <field name="vendus_id"/>
+            </xpath>
+            <xpath expr="//group[@name='sale_info_group']/field[@name='ref']" position="after">
+                <field name="reason" attrs="{'required': [('is_vendus_credit_note', '=', True)]}"/>
+            </xpath>
+            <xpath expr="//div[@name='journal_div']" position="after">
+                <field name="vendus_is_self_paid" invisible="1"/>
+                <field name="vendus_payment_method_id"
+                       attrs="{'invisible': [('vendus_is_self_paid', '=', False)], 'required': [('vendus_is_self_paid', '=', True)]}"/>
+                <field name="vendus_payment_journal_id" domain="[('type', 'in', ['bank', 'cash'])]"
+                       attrs="{'invisible': [('vendus_is_self_paid', '=', False)], 'required': [('vendus_is_self_paid', '=', True)]}"/>
+            </xpath>
+            <!--Vendus Credit Notes Restrictions-->
+            <xpath expr="//field[@name='invoice_line_ids']/tree" position="inside">
+                <field name="refunded_line_id" optional="hide"/>
+            </xpath>
+            <xpath expr="//group[@name='sale_info_group']/field[@name='ref']" position="attributes">
+                <attribute name="attrs">{'required': [('move_type', '=', 'out_refund')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='sequence']" position="attributes">
+                <attribute name="attrs">{'invisible': [('parent.reversed_entry_id', '!=', False), ('parent.country_code', '=', 'PT')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='product_id']" position="attributes">
+                <attribute name="attrs">{'readonly': [('parent.reversed_entry_id', '!=', False), ('parent.country_code', '=', 'PT')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='name']" position="attributes">
+                <attribute name="attrs">{'readonly': [('parent.reversed_entry_id', '!=', False), ('parent.country_code', '=', 'PT')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='price_unit']" position="attributes">
+                <attribute name="attrs">{'readonly': [('parent.reversed_entry_id', '!=', False), ('parent.country_code', '=', 'PT')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='tax_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('parent.reversed_entry_id', '!=', False), ('parent.country_code', '=', 'PT')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="attributes">
+                <attribute name="attrs">{'readonly': ['|', ('state', '!=', 'draft'), '&amp;', ('reversed_entry_id', '!=', False), ('country_code', '=', 'PT')]}</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

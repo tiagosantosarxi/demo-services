@@ -1,0 +1,974 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vendus_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-16 09:47+0000\n"
+"PO-Revision-Date: 2021-04-16 09:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport_journal.py:0
+#: code:addons/vendus_stock/models/stock_transport_journal.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (cópia)"
+
+#. module: vendus_stock
+#: model:ir.actions.report,print_report_name:vendus_stock.action_print_transport_document
+msgid "'TRANSPORT - %s' % (object.name)"
+msgstr "'TRANSPORTE - %s' % (object.name)"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "<b>Loading Address:</b>"
+msgstr "<b>Endereço de Carga:</b>"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "<b>Unloading Address:</b>"
+msgstr "<b>Endereço de Descarga:</b>"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "<span>Product</span>"
+msgstr "<span>Artigo</span>"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "<span>Quantity</span>"
+msgstr "<span>Quantidade</span>"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "<strong>Estimated End Date</strong>"
+msgstr "<strong>Data Estimada de Fim</strong>"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "<strong>Estimated Start Date</strong>"
+msgstr "<strong>Data Estimada de Início</strong>"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "<strong>Posting Date</strong>"
+msgstr "<strong>Data de Emissão</strong>"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "<strong>Vehicle License Plate</strong>"
+msgstr "<strong>Matrícula do Veículo</strong>"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_tree
+msgid "AT Code"
+msgstr "Código AT"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "AT Code:"
+msgstr "Código AT:"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__at_doc_code_id
+msgid "AT Document Code ID"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_ids
+msgid "Activities"
+msgstr "Atividades"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__address
+msgid "Address"
+msgstr "Endereço"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_journal_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_journal_view_search
+msgid "Archived"
+msgstr "Arquivado"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_picking__can_create_vendus_documents
+msgid "Can Create Vendus Documents"
+msgstr ""
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_transport__state__cancel
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_res_company__at_foreign_partners
+#: model:ir.model.fields,help:vendus_stock.field_res_config_settings__at_foreign_partners
+msgid ""
+"Check to use foreign partners with no official AT validation for Transport "
+"Documents"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__city
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "City"
+msgstr "Cidade"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_transport__state__comm
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "Communication"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__company_id
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configurações"
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__country_id
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Country"
+msgstr "País"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.view_picking_form
+msgid "Create Transport Document"
+msgstr "Criar Documento de Transporte"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__create_uid
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__create_uid
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__create_uid
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__create_date
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__create_date
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__create_date
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__date
+msgid "Date"
+msgstr "Data"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__delivery_address_street
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "Delivery Address"
+msgstr "Endereço de Entrega"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__delivery_address_city
+msgid "Delivery Address City"
+msgstr "Cidade do Endereço de Entrega"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__delivery_address_country
+msgid "Delivery Address Country"
+msgstr "País do Endereço de Entrega"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__delivery_address_zip
+msgid "Delivery Address Postal Code"
+msgstr "Código Postal do Endereço de Entrega"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_transport_journal__movement_type__gr
+msgid "Delivery Document"
+msgstr "Documento de Entrega"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_picking__type__out_picking
+msgid "Delivery Slip"
+msgstr "Guia de Remessa"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Destination"
+msgstr "Destino"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_product_product__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_res_company__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_res_partner__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_return_picking__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__display_name
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__sequence
+msgid "Display order"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_transport__state__draft
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "Draft"
+msgstr "Rascunho"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__email
+msgid "Email"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__end_date
+msgid "End Date"
+msgstr "Data de Fim"
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport_line__has_tracking
+msgid "Ensure the traceability of a storable product in your warehouse."
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__foreign_partner
+msgid "Foreign Partner"
+msgstr ""
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Generate Returns Document"
+msgstr "Gerar Guia de Devolução"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_journal_view_search
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "Group By"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_product_product__id
+#: model:ir.model.fields,field_description:vendus_stock.field_res_company__id
+#: model:ir.model.fields,field_description:vendus_stock.field_res_config_settings__id
+#: model:ir.model.fields,field_description:vendus_stock.field_res_partner__id
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_picking__id
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_return_picking__id
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__id
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__id
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__id
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__id
+msgid "ID"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__message_needaction
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__message_has_error
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid ""
+"If the document has an AT code, cancelling it will also cancel it on the "
+"AT's end. Proceed?"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__is_global
+msgid "Is Global"
+msgstr "Global"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_picking__is_return
+msgid "Is a Return Picking"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__journal_id
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_tree
+msgid "Journal"
+msgstr "Diário"
+
+#. module: vendus_stock
+#: model:ir.ui.menu,name:vendus_stock.transport_journal_menu
+msgid "Journals"
+msgstr "Diários"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_product_product____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_res_company____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_res_partner____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_return_picking____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line____last_update
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__write_uid
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__write_uid
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__write_uid
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__write_date
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__write_date
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__write_date
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid ""
+"Line %s must have same the quantity serial numbers as product quantity."
+msgstr ""
+"A linha %s deve ter a mesma quantidade de números de série como de quantidade da linha."
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__loading_address_street
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "Loading Address"
+msgstr "Endereço de Carga"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__loading_address_city
+msgid "Loading Address City"
+msgstr "Cidade do Endereço de Carga"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__loading_address_country
+msgid "Loading Address Country"
+msgstr "País do Endereço de Carga"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__loading_address_zip
+msgid "Loading Address Postal Code"
+msgstr "Código Postal do Endereço de Carga"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.report_transport_document
+msgid "Lot/Serial Number"
+msgstr "Lote/Número de Série"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__mobile
+msgid "Mobile"
+msgstr "Telemóvel"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Movement End Date"
+msgstr "Data de Fim"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "Movement Start Date"
+msgstr "Data de Início"
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid "Movement Start Date is a required field"
+msgstr "A Data de Início é um campo obrigatório"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_tree
+msgid "Movement Type"
+msgstr "Tipo de Movimento"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__name
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__name
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__name
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_tree
+msgid "Name"
+msgstr "Nome"
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid "New"
+msgstr "Novo"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__movement_type
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__movement_type
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__movement_type
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_journal_view_search
+msgid "Operation Type"
+msgstr "Tipo de Operação"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Origin"
+msgstr "Origem"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__origin_document
+msgid "Origin Document"
+msgstr "Documento de Origem"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_transport_journal__movement_type__ga
+msgid "Own Assets Document"
+msgstr "Guia de Ativos Próprios"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__partner_id
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_tree
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__phone
+msgid "Phone"
+msgstr "Telefone"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "Posting Date"
+msgstr "Data de Emissão"
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_product_product
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__product_id
+msgid "Product"
+msgstr "Artigo"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__has_tracking
+msgid "Product with Tracking"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__transport_line_ids
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Products"
+msgstr "Artigos"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__product_uom_qty
+msgid "Quantity"
+msgstr "Quantidade"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__reason
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__reason
+msgid "Reason for the status update"
+msgstr "Motivo da atualização de estado"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__reference
+msgid "Reference"
+msgstr "Referência"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__return_documents
+msgid "Related Return Documents"
+msgstr "Guias de Devolução Relacionadas"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__activity_user_id
+msgid "Responsible User"
+msgstr "Responsável"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_picking__type__out_refund
+msgid "Return Delivery Slip"
+msgstr "Guia de Devolução"
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+#, python-format
+msgid "Return Documents"
+msgstr "Guias de Devolução"
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_stock_return_picking
+msgid "Return Picking"
+msgstr "Operação de Devolução de Stock"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_transport_journal__movement_type__gd
+msgid "Returns Document"
+msgstr "Guia de Devolução"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "Search"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__lot_ids
+msgid "Serial Numbers"
+msgstr "Números de Série"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__start_date
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_tree
+msgid "Start Date"
+msgstr "Data de Início"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "State"
+msgstr "Estado"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__state
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_stock_transport_journal
+msgid "Stock Document Journal"
+msgstr "Diário de Documento de Transporte"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_picking__stock_transport_ids
+msgid "Stock Transport"
+msgstr "Documento de Transporte"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_picking__stock_transport_count
+msgid "Stock Transport Count"
+msgstr "Número de Documentos de Transporte"
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_stock_transport
+msgid "Stock Transport Document"
+msgstr "Documento de Transporte"
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_stock_transport_line
+msgid "Stock Transport Lines"
+msgstr "Linhas de Transporte"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.view_picking_form
+msgid "Stock Transports"
+msgstr "Documentos de Transporte"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Street..."
+msgstr "Rua..."
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__note
+msgid "Terms and Conditions"
+msgstr "Termos e Condições"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Terms and conditions..."
+msgstr "Termos e condições..."
+
+#. module: vendus_stock
+#: model:ir.model.constraint,message:vendus_stock.constraint_stock_transport_journal_name_uniq
+msgid "This name is already being used in another journal!"
+msgstr "Este nome já está a ser utilizado noutro diário!"
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_stock_picking
+msgid "Transfer"
+msgstr "Transferência"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__transport_id
+msgid "Transport"
+msgstr "Transporte"
+
+#. module: vendus_stock
+#: model:ir.actions.report,name:vendus_stock.action_print_transport_document
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__name
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Transport Document"
+msgstr "Documento de Transporte"
+
+#. module: vendus_stock
+#: model:ir.actions.act_window,name:vendus_stock.stock_transport_action
+#: model:ir.ui.menu,name:vendus_stock.menu_action_transport_documents_tree
+#: model:ir.ui.menu,name:vendus_stock.transport_documents_menu
+msgid "Transport Documents"
+msgstr "Documentos de Transporte"
+
+#. module: vendus_stock
+#: model:ir.actions.act_window,name:vendus_stock.stock_transport_journal_action
+msgid "Transport Journals"
+msgstr "Diários de Transporte"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_transport_journal__movement_type__gt
+msgid "Transport Slip"
+msgstr "Guia de Transporte"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_picking__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_line__product_uom
+msgid "Unit of Measure"
+msgstr "Unidade de Medida"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_res_company__at_foreign_partners
+#: model:ir.model.fields,field_description:vendus_stock.field_res_config_settings__at_foreign_partners
+#: model_terms:ir.ui.view,arch_db:vendus_stock.res_config_settings_view_form
+msgid "Use Foreign Partners"
+msgstr ""
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "Validate"
+msgstr "Emitir"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_transport__state__validated
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_search
+msgid "Validated"
+msgstr "Emitido"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__vat
+msgid "Vat"
+msgstr "NIF"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__vehicle_id
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+#: model_terms:ir.ui.view,arch_db:vendus_stock.transport_documents_view_tree
+msgid "Vehicle License Plate"
+msgstr "Matrícula do Veículo"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_picking__type__in_picking
+msgid "Vendor Delivery Slip"
+msgstr "Guia de Remessa de Fornecedor"
+
+#. module: vendus_stock
+#: model:ir.model.fields.selection,name:vendus_stock.selection__stock_picking__type__in_refund
+msgid "Vendor Return Delivery Slip"
+msgstr "Guia de Devolução de Fornecedor"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__vendus_id
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__vendus_id
+msgid "Vendus ID"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__vendus_attachment_id
+msgid "Vendus PDF"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport_journal__vendus_register_id
+msgid "Vendus Register"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model,name:vendus_stock.model_vendus_supplier
+#: model:ir.model.fields,field_description:vendus_stock.field_res_partner__vendus_supplier_id
+#: model:ir.model.fields,field_description:vendus_stock.field_res_users__vendus_supplier_id
+msgid "Vendus Supplier"
+msgstr ""
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid "Warning!"
+msgstr "Aviso!"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__website
+msgid "Website"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_stock_transport__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: vendus_stock
+#: model:ir.model.fields,help:vendus_stock.field_stock_transport__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid ""
+"When posting in a future date, you will only be able to create documents in "
+"a date after that."
+msgstr ""
+"Ao emitir numa data futura, apenas poderá criar novos documentos numa "
+"data posterior."
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid ""
+"You can not post a transport document that is already in a posted state."
+msgstr ""
+"Não pode emitir uma guia de transporte já no estado de emitida."
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid "You can not post a transport document without any lines"
+msgstr "Não pode emitir uma guia de tranporte sem linhas"
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid "You can not unlink a posted document."
+msgstr "Não pode apagar um documento emitido."
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid ""
+"You must create a return type journal in this company to enable the return "
+"document creation"
+msgstr "Deve criar um diário para guias de devolução nesta empresa para "
+"criar guias de devolução"
+
+#. module: vendus_stock
+#: code:addons/vendus/vendus_stock/models/stock_transport.py:0
+#: code:addons/vendus_stock/models/stock_transport.py:0
+#, python-format
+msgid "You should have one line per product lot"
+msgstr "Deve existir uma linha por lote de artigo"
+
+#. module: vendus_stock
+#: model_terms:ir.ui.view,arch_db:vendus_stock.stock_transport_view_form
+msgid "ZIP"
+msgstr "Código Postal"
+
+#. module: vendus_stock
+#: model:ir.model.fields,field_description:vendus_stock.field_vendus_supplier__zip
+msgid "Zip"
+msgstr "Código Postal"

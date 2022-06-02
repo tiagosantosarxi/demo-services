@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="vendus_model_uom" model="vendus.model">
+        <field name="name">UoM</field>
+        <field name="model_id" ref="vendus_account.model_vendus_uom"/>
+        <field name="relative_endpoint">products/units</field>
+    </record>
+
+    <record id="vendus_model_category" model="vendus.model">
+        <field name="name">Category</field>
+        <field name="model_id" ref="vendus_account.model_vendus_category"/>
+        <field name="relative_endpoint">products/categories</field>
+    </record>
+
+    <record id="vendus_model_brand" model="vendus.model">
+        <field name="name">Brand</field>
+        <field name="model_id" ref="vendus_account.model_vendus_brand"/>
+        <field name="relative_endpoint">products/brands</field>
+    </record>
+
+    <record id="vendus_model_pricegroup" model="vendus.model">
+        <field name="name">Pricegroup</field>
+        <field name="model_id" ref="vendus_account.model_vendus_pricegroup"/>
+        <field name="relative_endpoint">products/pricegroups</field>
+    </record>
+
+    <record id="vendus_model_payment_method" model="vendus.model">
+        <field name="name">Payment Method</field>
+        <field name="model_id" ref="vendus_account.model_vendus_payment_method"/>
+        <field name="relative_endpoint">documents/paymentmethod</field>
+    </record>
+
+    <record id="vendus_model_register" model="vendus.model">
+        <field name="name">Register</field>
+        <field name="model_id" ref="vendus_account.model_vendus_register"/>
+        <field name="relative_endpoint">registers</field>
+    </record>
+
+    <record id="vendus_model_user" model="vendus.model">
+        <field name="name">User</field>
+        <field name="model_id" ref="vendus_account.model_vendus_user"/>
+        <field name="relative_endpoint">users</field>
+    </record>
+
+    <record id="vendus_model_account" model="vendus.model">
+        <field name="name">Account</field>
+        <field name="model_id" ref="vendus_account.model_vendus_account"/>
+        <field name="relative_endpoint">account</field>
+    </record>
+</odoo>

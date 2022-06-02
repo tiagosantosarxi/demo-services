@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_payment_form" model="ir.ui.view">
+        <field name="name">account.payment.form.inherit.vendus_account</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="vendus_receipt_name" attrs="{'invisible': [('vendus_receipt_name', '=', False)]}"/>
+            </xpath>
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="attrs">
+                    {'readonly': [('state', '!=', 'draft')], 'invisible': [('vendus_receipt_name', '!=', False)]}
+                </attribute>
+            </xpath>
+            <xpath expr="//field[@name='payment_method_line_id']" position="after">
+                <field name="needs_vendus_payment_method" invisible="1"/>
+                <field name="vendus_payment_method_id"
+                       attrs="{'required': [('needs_vendus_payment_method', '=', True)],
+                               'invisible': [('needs_vendus_payment_method', '=', False)]}"
+                       options="{'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_account_payment_register_form" model="ir.ui.view">
+        <field name="name">account.payment.register.form.inherit.vendus_account</field>
+        <field name="model">account.payment.register</field>
+        <field name="inherit_id" ref="account.view_account_payment_register_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_method_line_id']" position="after">
+                <field name="needs_vendus_payment_method" invisible="1"/>
+                <field name="vendus_payment_method_id"
+                       attrs="{'required': [('needs_vendus_payment_method', '=', True)],
+                               'invisible': [('needs_vendus_payment_method', '=', False)]}"
+                       options="{'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_journal_form" model="ir.ui.view">
+        <field name="name">account.journal.form</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="vendus" string="Vendus" attrs="{'invisible': [('type', '!=', 'sale')]}">
+                    <group>
+                        <group>
+                            <field name="vendus_register_id"/>
+                            <field name="vendus_document_type"/>
+                            <field name="default_vendus_payment_method_id"
+                                   attrs="{'invisible': [('vendus_document_type', 'not in', ['FR', 'FS'])], 'required': [('vendus_document_type', 'in', ['FR', 'FS'])]}"/>
+                            <field name="default_vendus_payment_journal_id"
+                                   attrs="{'invisible': [('vendus_document_type', 'not in', ['FR', 'FS'])], 'required': [('vendus_document_type', 'in', ['FR', 'FS'])]}"
+                                   domain="[('type', 'in', ['bank', 'cash'])]"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

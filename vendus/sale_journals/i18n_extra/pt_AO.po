@@ -1,0 +1,18 @@
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_journals
+msgid "Sale Journals"
+msgstr "Diários de Venda"
+
+#. module: sale_journals
+#: model:ir.actions.act_window,name:sale_journals.sale_order_journal_action
+#: model:ir.model,name:sale_journals.model_sale_order_journal
+#: model:ir.model.fields,field_description:sale_journals.field_sale_order__journal_id
+msgid "Sale Journal"
+msgstr "Diário de Venda"
+
+#. module: sale_journals
+#: model:ir.model.fields,field_description:sale_journals.field_sale_order_journal__sale_type_id
+#: model:ir.model.fields,field_description:sale_journals.field_sale_order__sale_type_id
+msgid "Sale Type"
+msgstr "Tipo de Venda"

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--Sale-->
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m00" model="account.tax.template">
+        <field name="exemption_id" ref="m00"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m02" model="account.tax.template">
+        <field name="exemption_id" ref="m02"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m04" model="account.tax.template">
+        <field name="exemption_id" ref="m04"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m10" model="account.tax.template">
+        <field name="exemption_id" ref="m10"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m11" model="account.tax.template">
+        <field name="exemption_id" ref="m11"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m12" model="account.tax.template">
+        <field name="exemption_id" ref="m12"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m13" model="account.tax.template">
+        <field name="exemption_id" ref="m13"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m14" model="account.tax.template">
+        <field name="exemption_id" ref="m14"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m15" model="account.tax.template">
+        <field name="exemption_id" ref="m15"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m16" model="account.tax.template">
+        <field name="exemption_id" ref="m16"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m17" model="account.tax.template">
+        <field name="exemption_id" ref="m17"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m18" model="account.tax.template">
+        <field name="exemption_id" ref="m18"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m19" model="account.tax.template">
+        <field name="exemption_id" ref="m19"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m20" model="account.tax.template">
+        <field name="exemption_id" ref="m20"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m30" model="account.tax.template">
+        <field name="exemption_id" ref="m30"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m31" model="account.tax.template">
+        <field name="exemption_id" ref="m31"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m32" model="account.tax.template">
+        <field name="exemption_id" ref="m32"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m33" model="account.tax.template">
+        <field name="exemption_id" ref="m33"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m34" model="account.tax.template">
+        <field name="exemption_id" ref="m34"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m35" model="account.tax.template">
+        <field name="exemption_id" ref="m35"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m36" model="account.tax.template">
+        <field name="exemption_id" ref="m36"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m37" model="account.tax.template">
+        <field name="exemption_id" ref="m37"/>
+    </record>
+
+    <record id="l10n_ao.ao_tax_sale_iva0_m38" model="account.tax.template">
+        <field name="exemption_id" ref="m38"/>
+    </record>
+
+    <!--Purchase-->
+
+</odoo>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_cancel_view_form" model="ir.ui.view">
+        <field name="name">sale.order.cancel.form.inherit.vendus_sale</field>
+        <field name="model">sale.order.cancel</field>
+        <field name="inherit_id" ref="sale.sale_order_cancel_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='display_invoice_alert']" position="after">
+                <field name="display_reason_field" invisible="1"/>
+                <group>
+                    <group>
+                        <field name="cancel_method" widget="radio"/>
+                    </group>
+                    <group>
+                        <div attrs="{'invisible':[('cancel_method', '!=', 'cancel')]}" class="oe_grey" colspan="4">
+                            This sale order will be cancelled.
+                        </div>
+                        <div attrs="{'invisible':[('cancel_method', '!=', 'rewrite')]}" class="oe_grey" colspan="4">
+                            This sale order will be cancelled and duplicated as a new quotation.
+                        </div>
+                        <div attrs="{'invisible':[('cancel_method', '!=', 'proforma')]}" class="oe_grey" colspan="4">
+                            This sale order will be cancelled and duplicated as a new proforma invoice.
+                        </div>
+                    </group>
+                </group>
+                <group>
+                    <group>
+                        <field name="reason"
+                               attrs="{'invisible': [('display_reason_field', '=', False)],
+                                       'required': [('display_reason_field', '=', True)]}"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

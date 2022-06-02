@@ -1,0 +1,53 @@
+{
+    'name': "Vendus - Portuguese Invoicing Certification",
+
+    'summary': """Vendus - Portuguese Invoicing Certification""",
+    'author': "Arxi",
+    'website': "https://www.arxi.pt",
+    'category': 'Accounting',
+    'version': '15.0.0.0.1',
+    'license': 'OPL-1',
+    'price': 550.00,
+    'currency': 'EUR',
+    'depends': ['payment', 'base'],
+    'data': [
+        'security/ir.model.access.csv',
+        'security/ir_rules.xml',
+        'data/vendus_model_data.xml',
+        'wizard/vendus_wizard_views.xml',
+        'wizard/vendus_saft_wizard_views.xml',
+        'wizard/account_move_reversal_view.xml',
+        'views/res_company.xml',
+        'views/res_config_settings.xml',
+        'views/product_views.xml',
+        'views/vendus_model_views.xml',
+        'views/vendus_uom_views.xml',
+        'views/vendus_brand_views.xml',
+        'views/vendus_category_views.xml',
+        'views/vendus_pricegroup_views.xml',
+        'views/vendus_payment_method_views.xml',
+        'views/vendus_account.xml',
+        'views/vendus_register_views.xml',
+        'views/account_move_views.xml',
+        'views/account_tax_views.xml',
+        'views/account_payment_views.xml',
+        'views/account_journal_views.xml',
+        'views/vendus_user_views.xml',
+        'views/res_users_views.xml',
+        'views/res_partner_views.xml',
+        'views/uom_uom_views.xml',
+        'views/product_pricelist_views.xml',
+        'views/product_category_views.xml',
+        'views/vendus_menus.xml',
+    ],
+    'images': [
+        'static/description/banner.png',
+    ],
+    'assets': {
+        'web.assets_backend': [
+            'vendus_account/static/src/**/**',
+        ]
+    },
+    'application': True,
+    'post_init_hook': '_post_init_hook'
+}

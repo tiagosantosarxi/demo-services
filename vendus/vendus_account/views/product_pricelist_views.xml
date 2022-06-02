@@ -1,0 +1,12 @@
+<odoo>
+    <record id="product_pricelist_form_inherit_vendus" model="ir.ui.view">
+        <field name="name">product.pricelist.form.vendus</field>
+        <field name="model">product.pricelist</field>
+        <field name="inherit_id" ref="product.product_pricelist_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group/field[@name='country_group_ids']" position="after">
+                <field name="vendus_pricegroup_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

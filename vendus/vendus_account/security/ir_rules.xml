@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="vendus_brand_comp_rule" model="ir.rule">
+        <field name="name">Vendus Brand multi-company</field>
+        <field name="model_id" ref="model_vendus_brand"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="vendus_category_comp_rule" model="ir.rule">
+        <field name="name">Vendus Category multi-company</field>
+        <field name="model_id" ref="model_vendus_category"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="vendus_payment_method_comp_rule" model="ir.rule">
+        <field name="name">Vendus Payment Method multi-company</field>
+        <field name="model_id" ref="model_vendus_payment_method"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="vendus_pricegroup_method_comp_rule" model="ir.rule">
+        <field name="name">Vendus Pricegroup multi-company</field>
+        <field name="model_id" ref="model_vendus_pricegroup"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="vendus_register_method_comp_rule" model="ir.rule">
+        <field name="name">Vendus Register multi-company</field>
+        <field name="model_id" ref="model_vendus_register"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="vendus_uom_method_comp_rule" model="ir.rule">
+        <field name="name">Vendus Uom multi-company</field>
+        <field name="model_id" ref="model_vendus_uom"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+
+    <record id="vendus_user_method_comp_rule" model="ir.rule">
+        <field name="name">Vendus User multi-company</field>
+        <field name="model_id" ref="model_vendus_user"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','in',company_ids)]</field>
+    </record>
+</odoo>
