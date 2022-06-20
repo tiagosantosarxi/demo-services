@@ -11,9 +11,9 @@ patch(ExpirationPanel.prototype, 'admin_expiration_panel', {
     },
 
     async mounted() {
-        if (!await this.user.hasGroup('base.group_erp_manager')) {
-            this.state.display = false;
-        }
         this._super.apply(this, arguments);
+        if (!await this.user.hasGroup('base.group_erp_manager')) {
+            this._onHide()
+        }
     }
 })
