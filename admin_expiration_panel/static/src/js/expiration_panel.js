@@ -10,9 +10,9 @@ patch(ExpirationPanel.prototype, 'admin_expiration_panel', {
         this.user = useService("user");
     },
 
-    mounted() {
+    async mounted() {
         this._super.apply(this, arguments);
-        if (!this.user.hasGroup('base.group_erp_manager')) {
+        if (!await this.user.hasGroup('base.group_erp_manager')) {
             this.state.display = false;
         }
     }
